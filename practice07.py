@@ -5,9 +5,10 @@ def ask_question(question: str, correct_answer: str):
 def check_answer(user_answer: str, correct_answer: str):
     return user_answer.lower() == correct_answer.lower()
 
+question = "2 juft sonmi?"
 correct_answer = "xa"
 
-user_answer = ask_question("2 juft sonmi?", correct_answer)
+user_answer = ask_question(question, correct_answer)
 is_correct = check_answer(user_answer, correct_answer)
 
 if is_correct:
